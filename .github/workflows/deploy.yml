@@ -24,12 +24,7 @@ jobs:
     - name: Build the React app
       run: npm run build
 
-    - name: Configure AWS CLI
-      run: |
-        aws --version
-
-    - name: Debug AWS CLI Version
-      run: aws --version
+   
 
     - name: Deploy to S3
       env:
