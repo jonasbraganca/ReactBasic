@@ -26,7 +26,7 @@ jobs:
 
     - name: Configure AWS CLI
       run: |
-        aws --update flag
+        aws --version
 
     - name: Debug AWS CLI Version
       run: aws --version
