@@ -27,7 +27,7 @@ jobs:
     needs: build
     steps:
     - uses: actions/checkout@v4
-    - uses: jakejarvis/s3-sync-action@v1.0.0
+    - uses: jakejarvis/s3-sync-action@master
       env:
         S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
